@@ -1,0 +1,101 @@
+/* Remove comportamento estranho de margens e paddings */
+* { box-sizing: border-box; }
+
+/* =============================== */
+/* HEADER                          */
+/* =============================== */
+.header {
+  padding: 24px;
+  background: linear-gradient(90deg, #162516, #0f8505);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  margin: 6px 0 12px;
+  color: #b8d2f0;
+}
+
+/* =============================== */
+/* FOOTER                          */
+/* =============================== */
+.footer {
+  padding: 12px;
+  text-align: center;
+  color: #9fbfe6;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.3));
+}
+
+/* Fundo geral + estrutura básica */
+body {
+  font-family: Inter, system-ui, Arial, Helvetica, sans-serif;
+  background: #2e551d;
+  color: #e6eef8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ========================= */
+/* Cards em LAYOUT HORIZONTAL */
+/* ========================= */
+
+.card {
+  display: flex;          
+  flex-direction: row;    
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(180deg,rgba(255,255,255,.03),rgba(0,0,0,.06));
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+
+/* Imagem ocupa 40% do card */
+.card .img {
+  width: 40%;
+  height: 100%;
+}
+
+/* Preenche o card e não distorce */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Conteúdo textual ocupa 60% */
+.card .body {
+  width: 60%;
+  padding: 16px;
+}
+
+/* Grid adaptado p/ cards horizontais */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+  gap: 16px;
+}
+
+/* Badge de status */
+.status {
+  padding: 6px 8px;
+  background: rgba(255,255,255,.03);
+  border-radius: 999px;
+}
+
+/* Status Dead */
+.bad {
+  background: rgba(255,50,50,.12);
+  color: #ffc7c7;
+}
+
+/* Loading */
+.loading {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
