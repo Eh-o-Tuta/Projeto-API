@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cartoons Archive — Projeto Front-End
 
 Este projeto foi desenvolvido para a disciplina de Desenvolvimento Front-End do curso de Ciência da Computação — UNIFECAF.
@@ -103,3 +104,6 @@ npx http-server .
 🎓 *Analize e desenvolvimento de sistemas – UNIFECAF*
 
 
+=======
+# Projeto-API
+>>>>>>> b04680ad08839b089aa36975008b25e341dcbd66
